@@ -1,0 +1,7 @@
+# Composer files
+/vendor
+
+# Composer files installed by Mozart
+/classes
+/src/Dependencies
+
