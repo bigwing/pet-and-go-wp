@@ -1,6 +1,9 @@
 # PetAndGo WP
 PHP library for interacting with the PetAndGo.com API within a WordPress site.
 
+[![PDS Skeleton](https://img.shields.io/badge/pds-skeleton-blue.svg?style=flat-square)](https://github.com/php-pds/skeleton)
+[![GitHub license](https://img.shields.io/github/license/bigwing/pet-and-go-wp)](https://github.com/bigwing/pet-and-go-wp/blob/master/LICENSE)
+
 ## Installation
 Install using Composer `composer require bigwing/pet-and-go-wp` and use the Composer autoloader.
 
