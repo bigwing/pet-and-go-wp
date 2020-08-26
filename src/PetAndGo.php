@@ -7,9 +7,9 @@
 
 namespace BigWing\PetAndGo;
 
-use BigWing\PetAndGo\Dependencies\Monolog\Logger;
-use BigWing\PetAndGo\Dependencies\Psr\Log\LoggerAwareInterface;
-use BigWing\PetAndGo\Dependencies\Psr\Log\LoggerAwareTrait;
+use Monolog\Logger;
+use Psr\Log\LoggerAwareInterface;
+use Psr\Log\LoggerAwareTrait;
 use WP_Error;
 use WP_Http;
 
@@ -333,7 +333,8 @@ class PetAndGo implements LoggerAwareInterface, ApiInterface, ClientInterface {
 
 	/**
 	 * @param $pet_id
-	 * @return mixed|void
+	 *
+	 * @return Pet
 	 */
 	public function get_pet( string $pet_id ): Pet {
 		return $this->remember_transient(

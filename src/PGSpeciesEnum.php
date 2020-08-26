@@ -7,7 +7,7 @@
 
 namespace BigWing\PetAndGo;
 
-use BigWing\PetAndGo\Dependencies\MyCLabs\Enum\Enum;
+use MyCLabs\Enum\Enum;
 
 /**
  * Class PGSpeciesEnum
@@ -18,11 +18,13 @@ use BigWing\PetAndGo\Dependencies\MyCLabs\Enum\Enum;
  *
  * @package BigWing\PetAndGo
  *
+ * @psalm-immutable
+ *
  * @method all()
  * @method dog()
  * @method cat()
  */
-final class PGSpeciesEnum extends Enum {
+class PGSpeciesEnum extends Enum {
 	/**
 	 * Species ID for all species.
 	 *

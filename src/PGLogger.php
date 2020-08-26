@@ -8,8 +8,8 @@
 namespace BigWing\PetAndGo;
 
 use Exception;
-use BigWing\PetAndGo\Dependencies\Monolog\Handler\StreamHandler;
-use BigWing\PetAndGo\Dependencies\Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+use Monolog\Logger;
 
 /**
  * Class Logger

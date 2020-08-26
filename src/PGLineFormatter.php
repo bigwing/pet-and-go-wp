@@ -7,7 +7,7 @@
 
 namespace BigWing\PetAndGo;
 
-use BigWing\PetAndGo\Dependencies\Monolog\Formatter\LineFormatter;
+use Monolog\Formatter\LineFormatter;
 
 /**
  * Class PGLineFormatter

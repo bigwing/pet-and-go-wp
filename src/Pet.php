@@ -33,6 +33,9 @@ class Pet {
 		return $this->$field;
 	}
 
+	/**
+	 * @param string|true $data
+	 */
 	public function set_field( string $field, $data ) {
 		$this->$field = $data;
 	}

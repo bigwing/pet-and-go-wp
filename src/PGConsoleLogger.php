@@ -7,8 +7,8 @@
 
 namespace BigWing\PetAndGo;
 
-use BigWing\PetAndGo\Dependencies\Monolog\Handler\BrowserConsoleHandler;
-use BigWing\PetAndGo\Dependencies\Monolog\Logger;
+use Monolog\Handler\BrowserConsoleHandler;
+use Monolog\Logger;
 
 /**
  * Class PGConsoleLogger
