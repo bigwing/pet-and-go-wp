@@ -37,7 +37,6 @@
   },
   "require-dev": {
 	"bigwing/phpcs-composer": "dev-master",
-	"johnpbloch/wordpress-core": ">=5.3",
 	"pds/skeleton": "^1.0",
 	"vimeo/psalm": "^3.14.2",
     "humanmade/psalm-plugin-wordpress": "^1.0"
