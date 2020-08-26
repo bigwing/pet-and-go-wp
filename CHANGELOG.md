@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2020-08-25
+
+### Fixed
+- Incorrectly named constructor function in Pet.
+
+### Changed
+- Introduced data store into Pet.
+- Array conversion and retrieval moved into Pet.
+
+### Removed
+- wordpress-core as a dev dependency in favor of Psalm plugin for WP stubs.
+
 ## [1.1.0] - 2020-08-25
 
 ### Added
