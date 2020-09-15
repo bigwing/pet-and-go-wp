@@ -39,7 +39,7 @@
 	"bigwing/phpcs-composer": "dev-master",
 	"pds/skeleton": "^1.0",
 	"vimeo/psalm": "^3.14.2",
-    "humanmade/psalm-plugin-wordpress": "^1.0"
+	"humanmade/psalm-plugin-wordpress": "^1.0"
   },
   "autoload": {
 	"psr-4": {
@@ -53,10 +53,18 @@
   "prefer-stable": true,
   "scripts": {
 	"post-install-cmd": [
-	  "composer dump-autoload"
+	  "@composer dump-autoload"
 	],
 	"post-update-cmd": [
-	  "composer dump-autoload"
+	  "@composer dump-autoload"
+	],
+	"lint": [
+		"phpcs src/ --standard=BigWing-WP --severity=8 -s",
+		"psalm src/"
+	],
+	"test": [
+		"@composer install",
+		"@lint"
 	]
   }
 }
