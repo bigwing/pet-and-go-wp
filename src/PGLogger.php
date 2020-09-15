@@ -42,7 +42,7 @@ class PGLogger extends Logger {
 	private function setup_file_logging() {
 		$log_path = WP_CONTENT_DIR . '/debug.log';
 
-		if ( ! empty( WP_DEBUG_LOG ) && is_string( WP_DEBUG_LOG ) ) {
+		if ( defined( WP_DEBUG_LOG ) && is_string( WP_DEBUG_LOG ) ) {
 			$log_path = WP_DEBUG_LOG;
 		}
 
